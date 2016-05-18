@@ -23,4 +23,4 @@ if people <= dogs:
 	print "Proplr are less than or equal to dogs."
 
 if people == dogs:
-	print "People are dogs"
+	print "People are dogs."
