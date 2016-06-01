@@ -24,6 +24,7 @@ class Person(object):
         self.name = name
         ## Person has-a pet of some kind
         self.pet = None
+
 ## Employee is-a Person
 class Employee(Person):
 
