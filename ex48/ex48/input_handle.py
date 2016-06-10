@@ -11,16 +11,16 @@ class lexicon(object):
         words = stuff.split()
         result = []
         for word in words:
-            if self.convert_word(word) != None:
-                result.append(self.convert_word(word))
-            elif self.convert_num(word) != None:
+            if self.convert_num(word) != None:
                 result.append(self.convert_num(word))
+            elif self.convert_word(word) != None:
+                result.append(self.convert_word(word))
             else:
                 result.append(self.convert_error(word))
         return result
 
-    def convert_word(self, word):
-
+    def convert_word(self, preword):
+        word = preword.lower()
         if (word in self.direct_list):
             return ('direction', word)
         elif (word in self.verb_list):

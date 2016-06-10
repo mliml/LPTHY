@@ -17,7 +17,7 @@ def test_verbs():
                          ('verb','eat')])
 def test_stops():
     my_lexicon = lexicon()
-    assert_equal(my_lexicon.scan("the"),[('stop','the')])
+    assert_equal(my_lexicon.scan("The"),[('stop','the')])
     result = my_lexicon.scan("the in of")
     assert_equal(result,[('stop','the'),
                          ('stop','in'),
